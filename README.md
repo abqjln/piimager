@@ -14,5 +14,12 @@ The reboot process is quick on a RPi4B, seconds on a RPi3B+, and ~3mins on a RPi
 Code tested on RPi4B booting from SSD to use /dev/mmclkb0 (SD card reader) for writing image.
 Images tested in RPi4B (64bit), RPi3B (32 & 64bit), and RPiZeroW (32bit).
 
+create-image.sh -> downloads 32 or 64 bit PiOS, modifies to insert configurations, saves on drive.
+write-sd-image.sh -> writes image to SD on RPi (tested on Pi4B booting from SSD)
+firstrun.sh.cfg -> configuration file containing S_xxx secrets from env vars in image-secrets.src
+mount-boot-image.sh -> mounts boot partition of image
+umount-boot-image.sh -> umounts boot partition of image
+
+
 First GitHub contribution...standing on shoulders of giants here.
 
